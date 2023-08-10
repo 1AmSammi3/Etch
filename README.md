@@ -1,2 +1,2 @@
-# Etch
-A kind of sketchpad
+Etch a sketch
+A kind of sketchpad for pixel art
