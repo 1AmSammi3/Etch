@@ -2,7 +2,9 @@ let container = document.querySelector(".container");
 let grid = parseInt(prompt("Enter a number from 10 to 50"));
 let color = document.getElementById('color');
 let clear = document.getElementById('clear');
+let remove = document.getElementById('rem');
 clear.addEventListener('click', cllear);
+remove.addEventListener('click', removegrid);
 
 if (grid >= 10 && grid <= 50) {
 
@@ -37,5 +39,11 @@ function cllear() {
    let cells = document.querySelectorAll(".cells");
    cells.forEach(cell => {
       cell.style.backgroundColor = '';
+   })
+}
+function removegrid() {
+   let cells = document.querySelectorAll('.cells');
+   cells.forEach(cell => {
+      cell.classList.toggle('gridless');
    })
 }
